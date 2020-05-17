@@ -1,6 +1,6 @@
 module.exports = {
   index(req, res) {
-    return res.render('login-screen/index', { display: 'none' })
+    return res.render('login-screen/index', { display: 'style = "display: none;"' })
   },
 
   post(req, res) {

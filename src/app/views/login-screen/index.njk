@@ -1,7 +1,7 @@
 {% extends 'layout.njk' %}
 
 {% block content_before %}
-  <div class="alert_login" style="display: {{ display }};">
+  <div class="alert_login" {{ display }}>
     {% if fields %}
       <div class="alert alert-success" role="alert">
         Você foi logado com sucesso
