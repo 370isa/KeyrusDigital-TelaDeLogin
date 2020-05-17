@@ -22,3 +22,6 @@ então a validação deu sucesso.)
 3. Rode o `npm install`
 4. Agora, rode o `grunt`
 5. E por fim, basta rodar o `npm start`
+
+## Mockup
+![enter image description here](https://github.com/370isa/KeyrusDigital-TelaDeLogin/blob/master/login-template.jpg)
