@@ -1,3 +1,4 @@
+// Configura as ações no destino das rotas.
 module.exports = {
   index(req, res) {
     return res.render('login-screen/index', { display: 'style = "display: none;"' })
