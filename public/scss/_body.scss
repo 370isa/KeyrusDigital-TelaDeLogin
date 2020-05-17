@@ -5,6 +5,7 @@ body {
 
   &::after {
   border-bottom: 6px solid $gray;
+  bottom: 0;
   content: '';
   height: 6px;
   position: absolute;
