@@ -1,0 +1,8 @@
+# Node Modules
+node_modules
+
+# Past public
+public/css
+public/fonts/*.otf
+public/fonts/*.ttf
+public/fonts/*.zip

@@ -1,0 +1,82 @@
+// @see variables.scss
+
+//
+// Colors
+// -------------------------
+
+$black:                 #000;
+$white:                 #fff;
+
+$gray--darker:          #222;
+$gray--dark:            #303030;
+$gray:                  #848484;
+$gray--light:           #e2e1e1;
+$gray--lighter:         #f7f6f6;
+
+$text-success:          #299a60;
+$contrast-success:      #49cf8b;
+$brand-success:         #5fdf9e;
+
+$text-info:             #969696;
+$brand-info:            #7b7b7b;
+
+$text-danger:           #a93b3b;
+$contrast-danger:       #db5252;
+$brand-danger:          #ef7575;
+
+$color-text:            #787878;
+$color-text--important: #939797;
+$color-text--link:      #2993de;
+
+$btn-action:              $color-text--link;
+$btn-action--hover:     #0b67a8;
+$btn-action--border:    #0f578a;
+
+$border-box:            #c6c6c6;
+
+//
+// Colors opacity
+// -------------------------
+$color-op11--black:     rgba(0, 0, 0, .11);
+$color-op19--black:     rgba(0, 0, 0, .19);
+$color-op21--black:     rgba(0, 0, 0, .21);
+$color-op32--black:     rgba(0, 0, 0, .32);
+$color-op60--black:     rgba(0, 0, 0, .6);
+
+$color-op60--lavender:  rgba(255, 249, 251, .6);
+
+//
+// Typography
+// -------------------------
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+       url('../fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('../fonts/TrebuchetMS.woff2') format('woff2'),
+      url('../fonts/TrebuchetMS.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family--default: 'Myriad Pro', sans-serif;
+$font-family--trebuchet: 'Trebuchet MS', $font-family--default;
+
+
+$font-size-base: 14px;
+$font-size-large: 16px;
+$font-size-big: 18px;
+$font-size-small: 12px;
+$font-size-smaller: 11px;
+
+$font-size-h1: $font-size-big;
+
+//
+// Blocks
+// -------------------------
+$border-radius--default: 10px;

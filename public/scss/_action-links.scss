@@ -1,0 +1,52 @@
+.action-links {
+  color: $color-text;
+  margin: 22px auto 0;
+  text-align: center;
+  width: 474px;
+
+  u {
+    font-size: $font-size-base;
+    font-weight: 600;
+  }
+
+  p {
+    font-family: $font-family--trebuchet;
+    font-size: $font-size-smaller;
+    margin: 16px auto 40px;
+  }
+
+  a {
+    color: $color-text--link;
+  }
+
+  .box-informations {
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+    width: 100%;
+
+    div {
+      color: $text-info;
+      height: 26px;
+
+      &:first-child {
+        background-color: $brand-info;
+        color: $white;
+        font-size: $font-size-big;
+        font-weight: bold;
+        line-height: 28px;
+        margin-right: 1%;
+        width: 6%;
+      }
+
+      &:last-child {
+        background-color: $white;
+        font-size: $font-size-small;
+        font-style: italic;
+        line-height: 26px;
+        width: 93%;
+      }
+    }
+  }
+}

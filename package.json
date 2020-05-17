@@ -1,0 +1,44 @@
+{
+  "name": "loginscreen_keyrusdigital",
+  "version": "1.0.0",
+  "description": "Tela de Login para o processo seletivo da empresa Keyrus Digital.",
+  "main": "scripts.js",
+  "scripts": {
+    "postinstall": "grunt",
+    "start": "npm-run-all -p nodemon browsersync postinstall",
+    "nodemon": "nodemon src/server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:3000 --files 'public, src/app/views'"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.4",
+    "bootstrap": "^4.4.1",
+    "bootstrap-sass": "3.3.7",
+    "express": "^4.17.1",
+    "grunt-postcss": "^0.9.0",
+    "nunjucks": "^3.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-githooks": "^0.6.0",
+    "grunt-sass": "^2.0.0",
+    "load-grunt-tasks": "^3.2.0",
+    "node-sass": "^4.0.0",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "grunt-cli": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/370isa/KeyrusDigital-TelaDeLogin.git"
+  },
+  "author": "Eloisa Amorin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/370isa/KeyrusDigital-TelaDeLogin/issues"
+  },
+  "homepage": "https://github.com/370isa/KeyrusDigital-TelaDeLogin#readme"
+}

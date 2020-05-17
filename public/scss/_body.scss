@@ -1,0 +1,15 @@
+body {
+  background: url('../images/bg-image.png') center center;
+  border-top: 6px solid $gray;
+  font-family: $font-family--default;
+
+  .container {
+    position: relative;
+    width: 700px;
+  }
+
+  footer {
+    background: url('../images/bg-image.png') center center;
+    border-bottom: 6px solid $gray;
+  }
+}

@@ -1,0 +1,159 @@
+.box-login {
+  margin: 156px auto 23px;
+  width: 390px;
+
+  .paper_login {
+    background: url('../images/bg-box-login.png') no-repeat center center / 100%;
+    border: 1px solid $border-box;
+    border-radius: $border-radius--default;
+    box-shadow: 0 2px 8px -2px $color-op19--black;
+    height: 275px;
+    margin: 0 auto 23px;
+    position: relative;
+    width: 100%;
+
+    &--second,
+    &--tirdh {
+      left: -1px;
+      top: -1px;
+      position: absolute;
+      width: calc(100% + 2px);
+    }
+
+    &--second {
+      height: 272px;
+    }
+
+    &--tirdh {
+      border-radius: $border-radius--default $border-radius--default 28px;
+      height: 269px;
+
+      &::after {
+        background: url('../images/fold.png') no-repeat;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 17px;
+        position: absolute;
+        right: 0;
+        width: 19px;
+      }
+    }
+  }
+
+  h1 {
+    color: $color-text--important;
+    font-size: $font-size-h1;
+    font-weight: bold;
+    text-align: center;
+    margin: 36px 0 20px;
+  }
+
+  form {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+  }
+
+  .form-group {
+    margin: 0;
+    margin-bottom: 7px;
+    position: relative;
+  }
+
+  input {
+    color: $color-text;
+    font-family: $font-family--default;
+
+    &:focus {
+      border-color: transparent;
+      box-shadow: inset 0 1px 1px $color-op19--black, 0 0 8px $color-op11--black;
+    }
+
+    &.user {
+      background-color: $gray--lighter;
+      border: 1px outset $color-op11--black;
+      border-bottom: 0;
+      height: 35px;
+      padding-left: 13px;
+      padding-right: 30px;
+
+      &_email,
+      &_password {
+        &~ span {
+          color: transparent;
+          height: 14px;
+          position: absolute;
+          right: 14px;
+          top: 30%;
+          width: 15px;
+        }
+      }
+
+      &_email {
+        &~ span {
+          background: url('../images/icon-user.png') no-repeat center center / 100%;
+        }
+      }
+
+      &_password {
+        &~ span {
+          background: url('../images/icon-locked.png') no-repeat center center / 100%;
+        }
+      }
+    }
+  }
+
+  button {
+    background: linear-gradient(180deg,
+      $color-op60--lavender 0%,
+      $btn-action 4%,
+      $btn-action 98%,
+      $btn-action--border 100%
+    );
+    box-shadow: 0 0 0 0 $color-op21--black;
+    border: 1px solid $btn-action--border;
+    font-size: $font-size-large;
+    margin: 8px 0 14px;
+    text-shadow: 2px 1px 0 $color-op32--black;
+    width: 114px;
+
+    span {
+      color: $white;
+      display: none;
+      font-size: $font-size-large;
+    }
+
+    &:hover {
+      background: linear-gradient(180deg,
+        $color-op60--lavender 0%,
+        $btn-action--hover 4%,
+        $btn-action--hover 98%,
+        $btn-action--border 100%
+      );
+      font-size: 0;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .form-check {
+    align-items: center;
+    display: inline-flex;
+    height: 11px;
+
+    &-input {
+      box-shadow: 0 0 2px 0 $color-op32--black;
+      margin: 0 4px 0 0;
+    }
+
+    &-label {
+      color: $color-text--important;
+      font-size: $font-size-small;
+      margin: 0;
+    }
+  }
+
+}

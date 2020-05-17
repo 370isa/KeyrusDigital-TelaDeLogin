@@ -1,0 +1,52 @@
+.alert {
+  border-radius: $border-radius--default;
+  font-size: $font-size-base;
+  font-weight: bold;
+  margin-bottom: 16px;
+  padding: 15px 25px;
+
+  &_login {
+    align-items: center;
+    display: inline-flex;
+    height: 126px;
+    margin-top: 30px;
+    position: absolute;
+    width: 670px;
+  }
+
+  &-danger {
+    background-color: $brand-danger;
+    border-color: $contrast-danger;
+    color: $text-danger;
+
+    &::before {
+      background: url('../images/icon-error.png') no-repeat center center / 100%;
+    }
+  }
+
+  &-success {
+    background-color: $brand-success;
+    border-color: $contrast-success;
+    color: $text-success;
+
+    &::before {
+      background: url('../images/icon-success.png') no-repeat center center / 100%;
+    }
+  }
+
+  &-danger,
+  &-success {
+    align-items: center;
+    display: flex;
+    height: 47px;
+    justify-content: space-between;
+    width: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 15px;
+    }
+  }
+}
