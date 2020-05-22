@@ -1,9 +1,8 @@
 .box-login {
-  margin: 156px auto 23px;
-  // width: 390px;
+  margin: 135px auto 23px;
 
   .paper_login {
-    background: url('../images/bg-box-login.png') no-repeat center center / 100%;
+    background: url('../images/bg-box-login.png') no-repeat center center / 100% 100%;
     border: 1px solid $border-box;
     border-radius: $border-radius--default;
     box-shadow: 0 2px 8px -2px $color-op19--black;
